@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8341fe3b63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      
+<div id="header">
+   <div class="container">
+    <nav>
+        
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#ser">Services</a></li>
+            <li><a href="#potfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Web Designer</p>
+        <h1>Hi, I am <span>Sam Saju</span><br> from India</h1>
+    </div>
+   </div>
+</div>
+<hr>
+<!----about------>
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/img.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Curious student with judgment qualities, Positive attitude. A well- disciplined character with a good vision. Aiming leverage my abilities to successfully ﬁll the vacancy at your company. I am the one who are eagerly trying to learn new things. I have a good proﬁciency in C, and Java. I am also good in DBMS. I could complete tasks on time in both individual and team settings. Dependable and reliable, ready to learn and grow with your company.</p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>HTML,CSS,JS</span><br>Designing Web App interface
+                        </li>
+                        <li>
+                            <span>Web Design</span><br>Web App Development
+                        </li>
+                        <li>
+                            <span>C</span><br>Full proficient
+                        </li>
+                        <li>
+                            <span>Java</span><br>good proficiency
+                        </li>
+                    </ul>
+                </div>
+                    <div class="tab-contents"id="experience">
+                    <ul>
+                        <li>
+                            <span>Internship in python</span><br>kites palarivattom
+                        </li>
+                        <li>
+                            <span>Intern</span><br>Brototype
+                        </li>
+                        <li>
+                            <span>Web Designing</span><br>Designing Public website
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                    <ul>
+                        <li>
+                            <span>Btech</span><br>Computer Science
+                        </li>
+                        <li>
+                            <span>Brototype</span><br>Mean Stack Development
+                        </li>
+                        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <hr>
+  <!--------services----------->
+
+  <div class="services"id="ser">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I provide a better website design with advanced features of web design tools.Also uses Javascript to make the actions in website</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web development</h2>
+                <p>Providing services related to building web applications using this technology stack..</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Mobile app development</h2>
+                <p>Creating cross-platform mobile applications for iOS and Android using the Flutter framework. These apps can offer a native-like experience on both platforms.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+  </div>
+ <!----portfolio------>
+ <hr>
+
+ <div id="potfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Linkedln Frontend</h3>
+                        <p>Linkedln profile using html and css</p>
+                        <a href="https://sam1713.github.io/My-linkedln-frontend/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Spotify</h3>
+                        <p>Spotify clone</p>
+                        <a href="https://sam1713.github.io/Spotify-frontend/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix</h3>
+                        <p>Netflix frontend clone</p>
+                        <a href="https://sam1713.github.io/My-Netflix-frontend-using-html-and-CSS/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class="btn">See more</a>
+    </div>
+ </div>
+ <hr>
+
+ <!---------contact------------>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="new">
+            <p><i class="fa-solid fa-paper-plane"></i> samsaju399@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 7593069879</p>
+        </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sam-saju-758a5821a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Sam1713"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/Sam.Res (1) (1).pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+           <form name="submit-to-google-sheet">
+            <input type="text"name="Name"placeholder="Your Name" required>
+            <input type="email"name="email"placeholder="Your Email" required>
+            <input type="number"name="Ph.no"placeholder="123 456 7890" required>
+            <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+            <button type="Submit"class="btn btn2">Submit</button>
+           </form>
+           <span id="msg"></span>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Sam </p>
+    </div>
+ </div>
+
+
+
+<script>
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+    
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwPU_fKLCX-GjthBu33Dj8HI4mcSYY1zqWp1r-Q6f5ywWMz9kR3uqOjhFi1IiMpOacG/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+    
+    
+    
+    
+
+</body>
+</html>
